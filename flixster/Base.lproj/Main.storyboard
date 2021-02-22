@@ -29,9 +29,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ret-Be-NUG">
-                                                    <rect key="frame" x="164" y="11" width="250" height="21"/>
+                                                    <rect key="frame" x="164" y="11" width="250" height="36"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -53,6 +53,7 @@
                                             <outlet property="posterView" destination="gAE-7b-K1d" id="BJy-Rw-1e7"/>
                                             <outlet property="synopsisLabel" destination="1fj-uT-zAR" id="KZ4-Nu-UGT"/>
                                             <outlet property="titleLabel" destination="Ret-Be-NUG" id="J2x-JN-ega"/>
+                                            <segue destination="RH6-jg-E1Z" kind="show" id="M9N-VE-9uI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -69,6 +70,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="511.59420289855075" y="87.723214285714278"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="o3P-yt-XKK">
+            <objects>
+                <viewController id="RH6-jg-E1Z" customClass="MovieDetailsViewController" customModule="flixster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GXq-iG-bzo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YZD-8r-EHq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="x6f-wF-Nsn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JmZ-mh-MLk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="88"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mJu-nU-uuC">
